@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+.box {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    transition: background-color 2s, transform 2s;
+    
+}
+.box:hover {
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+    transform: rotate(180deg);
+}

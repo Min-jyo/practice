@@ -1,0 +1,318 @@
+@charset "utf-8";
+@import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+html {
+    font-size: 10px;
+}
+body {
+    margin: 0;
+    font-family: 'Spoqa Han Sans', 'Sans-serif';
+    font-weight: 400;
+}
+/* a11y-hidden 설정 */
+.a11y-hidden {
+    background-color: red;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+    margin: -1px;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+}
+/* header & 메인 홈 */
+.home {
+    background: #292929;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #f24d4c;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.logo {
+    margin: 0;
+}
+.logo img {
+    width: 350px;
+    height: 450px;
+}
+.home span {
+    order: -1;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.home-nav {
+    margin-bottom: 20px;
+}
+.home-nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+.home-nav ul li {
+    font-size: 1.6rem;
+}
+.home-nav ul li:nth-child(n+2)::before {
+    content: "/";
+    padding: 0 10px;
+}
+/* about 페이지 */
+.about-page {
+    width: 100vw;
+    position: relative;
+    display: flex;
+}
+.about-logo {
+    background: #f8484e;
+    width: 50vw;
+    height: 100vh;
+    position: sticky;
+    top: 0px;
+}
+.section {
+    background: aqua;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.about-section {
+    background: pink;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.about-h2 {
+    margin: 0;
+}
+.about-nav ul {
+    list-style-type: none;
+    margin: 0 0 45px 0;
+    padding: 0;
+    display: flex;
+    font-weight: 700;
+}
+.about-nav ul li:nth-child(n+2)::before {
+    content: "/";
+    padding: 0 10px;
+}
+/* about section */
+.about-section2{
+    background-color: green;
+    width: 50vw;
+    padding: 60px;
+    line-height: 2;
+}
+​
+.about-section2-introduce p:nth-child(1){
+    background-color: #00BFFF;
+}
+​
+.about-section2-work1{
+    background-color: #C3E7FA;
+    /* font-weight: 700;
+    font-size:1.2rem; */
+}
+​
+.about-section2-work1 p:nth-child(1){
+    /* font-weight: initial;
+    font-size : 1rem; */
+}
+​
+.about-section2-work1 p:nth-child(2){
+    /* font-size: 1rem; */
+}
+​
+.about-section2-work2{
+    background-color: #93DAFF;
+    /* font-weight: 700;
+    font-size: 1.4rem */
+}
+​
+.about-section2-work2 p,
+.about-section2-work2 ol {
+    /* background-color: #93DAFF; */
+    /* font-weight: initial;
+    font-size: 1.4rem;
+    padding : 0; */
+}
+​
+.about-section2-work2 ol>li{
+    list-style-type : none;
+}
+​
+​
+/* .about-section2-work2 ol>li::before{
+    color: #f7484d;
+}
+.about-section2-work2 ol>li:nth-child(1)::before{
+    content:"1.";
+}
+.about-section2-work2 ol>li:nth-child(2)::before{
+    content:"2.";
+}
+.about-section2-work2 ol>li:nth-child(3)::before{
+    content:"3.";
+}
+.about-section2-work2 ol>li:nth-child(4)::before{
+    content:"4.";
+} */
+/* .about-section2-work2 span{
+    background-color: #93DAFF;
+    font-weight: 700;
+    padding: 1px;
+}
+​
+.about-section2-work2 ul>li{
+    background-color: #93DAFF;
+    list-style : disc; 
+}
+​
+​
+.about-section2-work2 div{
+    display : flex ;
+    flex-direction: row;
+}
+​
+.about-section2-work2 div>img{
+    width: 20%;
+    margin: 0 20px;
+}
+​
+.about-section2-work2 div>p{
+    background-color: orange;
+    font-weight: 700;
+    margin: 0;
+} */
+/* about END */
+/* work 페이지 */
+.work-page {
+    width: 100vw;
+    display: flex;
+}
+.work-page-nav {
+    width: 50vw;
+    height: 100vh;
+    position: sticky;
+    top: 0px;
+}
+.work-section {
+    background: pink;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.work-content-nav ul {
+    list-style-type: none;
+    margin-top: 80px;
+    padding: 0;
+    display: flex;
+}
+.work-nav ul {
+    list-style-type: none;
+    margin-bottom: 45px;
+    font-weight: 700;
+    padding: 0;
+    display: flex;
+}
+.work-content-nav ul li:nth-child(n+2)::before,
+.work-nav ul li:nth-child(n+2)::before {
+    content: "/";
+    padding: 0 10px;
+}
+.work-content {
+    background: pink;
+    width: 50vw;
+}
+.work-austria-tourism-heading1 {
+    margin: 0;
+}
+.work-puma {
+    /* display: none; */
+}
+/* footer - contact 페이지 */
+.contact-page {
+    width: 100vw;
+    display: flex;
+}
+.contact-page-nav {
+    width: 50vw;
+    height: 100vh;
+    position: sticky;
+    top: 0px;
+    background: #292929;
+}
+.contact-section {
+    background: #292929;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.contact-ul {
+    list-style-type: none;
+    margin-bottom: 45px;
+    font-weight: 700;
+    padding: 0;
+    display: flex;
+    color: #fff;
+}
+.contact-ul li:nth-child(n+2)::before {
+    content: "/";
+    padding: 0 10px;
+}
+.contact-section2 {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact-section2 h3 {
+    background-color: yellow;
+    font-size: 1.6rem;
+}
+.contact-section2 p {
+    background-color: lime;
+    font-size: 1.4rem;
+    padding: 10px 30px;
+}
+.contact-section2 span {
+    background: skyblue;
+    font-size: 1.4rem;
+    padding: 0 10px;
+}
+.social-nav {
+    background: orange;
+}
+.social-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+.social-nav ul li {
+    padding: 0 30px;
+}
+.social-nav ul li img {
+    width: 35px;
+    height: 35px;
+}
